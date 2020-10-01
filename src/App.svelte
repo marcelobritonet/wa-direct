@@ -4,7 +4,6 @@
 	const PHONE_NUMBER_KEY = 'phoneNumber';
 	const REGION_NUMBER_REGEX = /^([0-9]{2})([0-9]{4})([0-9]{4,5})$/;
 
-	export let name;
 	export let phoneNumber = '';
 	export let fullNumber = '';
 
