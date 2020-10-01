@@ -33,6 +33,8 @@
 	}
 
 	$: document.title = `Whatsapp directly: ${fullNumber}`
+
+	$: isDisabled = phoneNumber && fullNumber ? '' : 'disabled';
 </script>
 
 <main>
@@ -44,7 +46,10 @@
 		   bind:value="{phoneNumber}"
 		   on:click={handlePhoneClick}
 	>
-	<button on:click={handleClick}>Start Chat</button>
+	<button
+			on:click={handleClick}
+			disabled="{isDisabled}"
+	>Start Chat</button>
 </main>
 
 <style>
