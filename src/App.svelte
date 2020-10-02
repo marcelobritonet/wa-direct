@@ -32,7 +32,7 @@
 		}
 	}
 
-	$: document.title = `Whatsapp directly: ${fullNumber}`
+	$: document.title = fullNumber ? `Começar chat com ${fullNumber}` : 'Whatsapp Direct Chat';
 
 	$: isDisabled = phoneNumber && fullNumber ? '' : 'disabled';
 </script>
