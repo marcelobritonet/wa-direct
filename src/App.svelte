@@ -20,11 +20,11 @@
 	}
 
 	$: {
-		let m;
+		const match = REGION_NUMBER_REGEX.exec(phoneNumber)
 
 		if(phoneNumber) {
-			if ((m = REGION_NUMBER_REGEX.exec(phoneNumber)) !== null) {
-				fullNumber = m[0];
+			if (match !== null) {
+				fullNumber = match[0];
 			} else {
 				fullNumber = '';
 			}
