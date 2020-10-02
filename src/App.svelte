@@ -49,7 +49,7 @@
 	<button class="action"
 			on:click={handleClick}
 			disabled="{isDisabled}"
-	>Start Chat</button>
+	>Iniciar Chat</button>
 </main>
 
 <style>
