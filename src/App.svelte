@@ -41,12 +41,12 @@
 	<h1>Whatsapp</h1>
 	<h2>Direct Chat</h2>
 	<p>mande mensagem sem precisar salvar o contato</p>
-	+
-	<input type="text" class="phone" placeholder="21 0000-0000"
+	<p>+</p>
+	<input type="number" class="phone" placeholder="21 0000-0000"
 		   bind:value="{phoneNumber}"
 		   on:click={handlePhoneClick}
 	>
-	<button
+	<button class="action"
 			on:click={handleClick}
 			disabled="{isDisabled}"
 	>Start Chat</button>
@@ -56,39 +56,78 @@
 	main {
 		text-align: center;
 		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
 		font-size: 3em;
+	}
+
+	@media (min-width: 720px) {
+		main {
+
+		}
 	}
 
 	h1 {
 		color: #137730;
 		text-transform: uppercase;
-		font-size: 2em;
+		font-size: 1em;
 		font-weight: 100;
 		margin-bottom: 0;
+	}
+
+	@media (min-width: 720px) {
+		h1 {
+			font-size: 2em;
+		}
 	}
 
 	h2 {
 		color: #198538;
 		text-transform: uppercase;
-		font-size: 1.3em;
+		font-size: .6em;
 		font-weight: 100;
 		margin: 0;
 	}
 
+	@media (min-width: 720px) {
+		h2 {
+			font-size: 1.3em;
+		}
+	}
+
 	p {
-		font-size: .4em;
+		font-size: .3em;
 		color: #333333;
 	}
 
-	.phone {
-		max-width: 500px;
+	@media (min-width: 720px) {
+		p {
+			font-size: .4em;
+		}
 	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
+	.phone {
+		max-width: 100%;
+		font-size: .6em;
+		text-align: center;
+		color: #333333;
+	}
+
+	@media (min-width: 720px) {
+		.phone {
+			max-width: 500px;
+			font-size: 1em;
+			text-align: left;
+		}
+	}
+
+	.action {
+		cursor: pointer;
+		font-size: .5em;
+	}
+
+	@media (min-width: 720px) {
+		.action {
+			font-size: 1em;
 		}
 	}
 </style>
