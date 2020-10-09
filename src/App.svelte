@@ -50,6 +50,12 @@
 			on:click={handleClick}
 			disabled="{isDisabled}"
 	>Iniciar Chat</button>
+	
+	<div>
+		<p class="madeby">
+			Made by <a href="https://www.linkedin.com/in/marcelobritonet/">@marcelobritonet</a>
+		</p>
+	</div>
 </main>
 
 <style>
@@ -129,5 +135,11 @@
 		.action {
 			font-size: 1em;
 		}
+	}
+
+	.madeby {
+		color: #6e6e6e;
+		font-style: italic;
+		font-size: .2em;
 	}
 </style>
