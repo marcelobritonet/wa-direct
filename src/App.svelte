@@ -21,7 +21,7 @@
 
 	$: {
 		const match = REGION_NUMBER_REGEX.exec(phoneNumber)
-
+		debugger
 		if(phoneNumber) {
 			if (match !== null) {
 				fullNumber = match[0];
@@ -29,6 +29,8 @@
 				fullNumber = '';
 			}
 			localStorage.setItem(PHONE_NUMBER_KEY, fullNumber);
+		} else if(phoneNumber === '') {
+			localStorage.setItem(PHONE_NUMBER_KEY, phoneNumber);
 		}
 	}
 
