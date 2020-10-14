@@ -55,7 +55,7 @@
 	
 	<div>
 		<p class="madeby">
-			Made by <a href="https://www.linkedin.com/in/marcelobritonet/">@marcelobritonet</a>
+			Made by <a target="_blank" href="https://www.linkedin.com/in/marcelobritonet/">@marcelobritonet</a>
 		</p>
 	</div>
 </main>
