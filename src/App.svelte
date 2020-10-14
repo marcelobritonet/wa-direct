@@ -55,7 +55,7 @@
 	
 	<div>
 		<p class="madeby">
-			Made by <a target="_blank" href="https://www.linkedin.com/in/marcelobritonet/">@marcelobritonet</a>
+			Por <a target="_blank" href="https://www.linkedin.com/in/marcelobritonet/">@marcelobritonet</a>
 		</p>
 	</div>
 </main>
@@ -132,7 +132,6 @@
 		cursor: pointer;
 		font-size: .5em;
 	}
-
 	@media (min-width: 720px) {
 		.action {
 			font-size: 1em;
@@ -143,5 +142,11 @@
 		color: #6e6e6e;
 		font-style: italic;
 		font-size: .2em;
+	}
+
+	@media (min-width: 720px) {
+		.madeby {
+			font-size: .3em;
+		}
 	}
 </style>
