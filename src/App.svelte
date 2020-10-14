@@ -32,14 +32,14 @@
 		}
 	}
 
-	$: document.title = fullNumber ? `Começar chat com ${fullNumber}` : 'Whatsapp Direct Chat';
+	$: document.title = fullNumber ? `Começar chat com ${fullNumber}` : 'Zap Sem Salvar Contato';
 
 	$: isDisabled = phoneNumber && fullNumber ? '' : 'disabled';
 </script>
 
 <main>
 	<h1>Whatsapp</h1>
-	<h2>Direct Chat</h2>
+	<h2>Sem Salvar Contato</h2>
 	<p>mande mensagem sem precisar salvar o contato</p>
 	<p>+</p>
 	<input type="number" class="phone" placeholder="21 0000-0000"
