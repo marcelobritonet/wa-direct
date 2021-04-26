@@ -21,7 +21,7 @@
 
 	$: {
 		const match = REGION_NUMBER_REGEX.exec(phoneNumber)
-		debugger
+
 		if(phoneNumber) {
 			if (match !== null) {
 				fullNumber = match[0];
