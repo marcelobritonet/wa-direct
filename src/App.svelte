@@ -15,10 +15,6 @@
 		window.location.href = `https://wa.me/55${fullNumber}`;
 	}
 
-	function handlePhoneClick(ev) {
-		ev.currentTarget.select();
-	}
-
 	$: {
 		const match = REGION_NUMBER_REGEX.exec(phoneNumber)
 
@@ -46,7 +42,6 @@
 	<p>+</p>
 	<input type="number" class="phone" placeholder="21 0000-0000"
 		   bind:value="{phoneNumber}"
-		   on:click={handlePhoneClick}
 	>
 	<button class="action"
 			on:click={handleClick}
